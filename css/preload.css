@@ -1,0 +1,191 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.preload{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 99;
+    transition: opacity 0.5s ease;
+}
+
+.preload-end{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.parent {
+    margin: 15rem 2.7rem;
+}
+
+.first {
+    height: 65px;
+    width: 170px;
+    margin-left: 15px;
+    animation: upper 1s infinite ease-in-out alternate;
+}
+
+.second {
+    height: 70px;
+    width: 200px;
+    position: absolute;
+    top: 17.6rem;
+}
+
+.third {
+    height: 67px;
+    width: 180px;
+    margin-left: 12px;
+    position: absolute;
+    top: 20.8rem;
+    animation: lower 1s infinite ease-in-out alternate;
+}
+
+@keyframes upper {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes lower {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .parent {
+        margin: 9.5rem 2.6rem;
+    }
+
+    .second {
+        top: 12.5rem;
+    }
+
+    .third {
+        top: 16rem;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    .parent {
+        margin: 9rem 2.5rem;
+    }
+
+    .second {
+        top: 12rem;
+    }
+
+    .third {
+        top: 15.5rem;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .parent {
+        margin: 13rem 5.5rem;
+    }
+
+    .second {
+        top: 16rem;
+    }
+
+    .third {
+        top: 19.5rem;
+    }
+}
+
+@media only screen and (min-width: 411px) {
+    .parent {
+        margin: 15rem 6.7rem;
+    }
+
+    .second {
+        top: 18rem;
+    }
+
+    .third {
+        top: 21.5rem;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    .parent {
+        margin: 16rem 6.5rem;
+    }
+
+    .second {
+        top: 18.9rem;
+    }
+
+    .third {
+        top: 22rem;
+    }
+}
+
+@media only screen and (min-width: 540px) {
+    .parent {
+        margin: 11rem 6.7rem;
+    }
+
+    .second {
+        top: 14rem;
+    }
+
+    .third {
+        top: 17.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .parent {
+        margin: 9rem 5.5rem;
+    }
+
+    .second {
+        top: 12rem;
+    }
+
+    .third {
+        top: 15.5rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .parent {
+        margin: 30rem 26.5rem;
+    }
+
+    .second {
+        top: 33rem;
+    }
+
+    .third {
+        top: 36.5rem;
+    }
+}
+
+@media only screen and (min-width: 1261px) {
+    .parent {
+        margin: 14.5rem 37rem;
+    }
+
+    .second {
+        top: 17.5rem;
+    }
+
+    .third {
+        top: 21rem;
+    }
+}
